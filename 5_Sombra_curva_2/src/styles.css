@@ -1,0 +1,40 @@
+body{
+	margin:0;
+	padding: 0;
+	font-family: Oswald;
+	background: seagreen;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.sombra-curva{
+	width: 300px;
+	height: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	background: color(seagreen l(60%));
+	font-size: 2.5em;
+	color: rgba(0,0,0,.4);
+}
+
+.sombra-curva:after, .sombra-curva:before{
+	content: "";
+	position: absolute;
+	bottom: 2%;
+	width: 96%;
+	height: 20%;
+	box-shadow: 0 5px 5px #000;
+	z-index: -1;
+}
+.sombra-curva:after{
+	transform: rotate(2deg);
+	right: 1%;
+}
+.sombra-curva:before{
+	left: 1%;
+	transform: rotate(-2deg);
+}

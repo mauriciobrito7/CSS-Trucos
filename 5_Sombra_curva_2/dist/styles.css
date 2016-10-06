@@ -1,0 +1,48 @@
+body{
+	margin:0;
+	padding:0;
+	font-family:Oswald;
+	background:#2e8b57;
+	height:100vh;
+}
+
+.sombra-curva,body{
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-pack:center;
+	    -ms-flex-pack:center;
+	        justify-content:center;
+	-webkit-box-align:center;
+	    -ms-flex-align:center;
+	        align-items:center;
+}
+
+.sombra-curva{
+	width:300px;
+	height:200px;
+	position:relative;
+	background:#66cc92;
+	font-size:2.5em;
+	color:rgba(0,0,0,.4);
+}
+
+.sombra-curva:after,.sombra-curva:before{
+	content:"";
+	position:absolute;
+	bottom:2%;
+	width:96%;
+	height:20%;
+	box-shadow:0 5px 5px #000;
+	z-index:-1;
+}
+.sombra-curva:after{
+	-webkit-transform:rotate(2deg);
+	        transform:rotate(2deg);
+	right:1%;
+}
+.sombra-curva:before{
+	left:1%;
+	-webkit-transform:rotate(-2deg);
+	        transform:rotate(-2deg);
+}
