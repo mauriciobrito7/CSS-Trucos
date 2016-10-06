@@ -1,0 +1,36 @@
+
+
+@import 'https://fonts.googleapis.com/css?family=Permanent+Marker';
+body{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background: steelblue;
+	font-family: 'Permanent Marker';
+	font-size: 1em;
+}
+
+.texto3d{
+	font-size: 5em;
+	color: #eee;
+	text-shadow: 1px 1px #222,
+				 2px 2px #222,
+				 3px 3px #222,
+				 4px 4px #111,
+				 5px 5px #111,
+				 6px 6px #111,
+				 7px 7px #111,
+				 8px 8px #111,
+				 9px 9px #111,
+				 10px 10px #111,
+				 11px 11px #111,
+				 12px 12px #111,
+				 13px 13px #111,
+				 14px 14px #111,
+				 15px 15px #111,
+				 16px 16px #111,
+				 17px 17px #111;
+}
